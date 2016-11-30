@@ -1,4 +1,21 @@
-<div class = "jumbotron text-center">
+<% if current_user %>
+  <div class = "jumbotron text-center">
     <h2>Welcome to VPMLP</h2>
     <h3>The site of Visual Perceptions of Machine Learning Problems</h3>
-</div>
+</div>  
+<% else %>
+    <div class = "jumbotron text-center">
+        <h2>Welcome to VPMLP</h2>
+        <h3>The site of Visual Perceptions of Machine Learning Problems</h3>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <div class="well">
+              <h2 class="text-center">Don't Have an Account?</h2>
+              <h4 class="text-center">Sign up for free and get access to the website.</h4>
+              <br/>
+              <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+            </div>
+        </div>
+    </div>
+<% end %>
