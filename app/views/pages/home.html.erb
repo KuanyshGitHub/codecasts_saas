@@ -1,8 +1,26 @@
 <% if current_user %>
-  <div class = "jumbotron text-center">
-    <h2>Welcome to VPMLP</h2>
-    <h3>The site of Visual Perceptions of Machine Learning Problems</h3>
-</div>  
+    <div class = "jumbotron text-center">
+        <h2>Welcome to VPMLP</h2>
+        <h3>The site of Visual Perceptions of Machine Learning Problems</h3>
+    </div>  
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well">
+              <h2 class="text-center">Get Graph For Machine Learning Problem</h2>
+              <h4 class="text-center">Upload Data, choose algorithm and get graph</h4>
+              <br/>
+              <%= link_to "Upload Data", "#", class: 'btn btn-info btn-lg btn-block' %>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="well">
+              <h2 class="text-center">Check yourself drawing line Machine Learning Problem</h2>
+              <h4>Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
+              <%= link_to "Test Yourself", "#", class: 'btn btn-info btn-lg btn-block' %>
+            </div>
+        </div>
+    </div>
+    
 <% else %>
     <div class = "jumbotron text-center">
         <h2>Welcome to VPMLP</h2>
